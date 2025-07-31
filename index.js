@@ -5,10 +5,7 @@ const router = Router()
 
 
 const handleURLs = (req, res) => {
-    console.log(req.params);
-
-    // res.status(200).send("done");
-    res.redirect(301, `https://github.com/${req.params.loanId}`);
+    res.redirect(301, `https://oolka.page.link/lmsloandetail/${req.params.loanId}`);
 }
 
 app.get('/', (req, res) => {
