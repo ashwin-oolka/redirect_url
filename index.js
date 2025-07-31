@@ -5,7 +5,7 @@ const router = Router()
 
 
 const handleURLs = (req, res) => {
-    res.redirect(301, `https://oolka.page.link/lmsloandetail/${req.params.loanId}`);
+    res.redirect(301, `https://oolka.page.link/bill-payments/${req.params.loanId}`);
 }
 
 app.get('/', (req, res) => {
