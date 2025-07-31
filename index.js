@@ -29,12 +29,12 @@ const dynamicRoutes = {
 
 // Register static redirect routes
 for (const [key, url] of Object.entries(staticRoutes)) {
-  app.get(`/redirect/${key}`, (_, res) => res.redirect(301, url));
+  app.get(`/${key}`, (_, res) => res.redirect(301, url));
 }
 
 // Register dynamic redirect routes
 for (const [route, handler] of Object.entries(dynamicRoutes)) {
-  app.get(`/redirect/${route}`, (req, res) => {
+  app.get(`/${route}`, (req, res) => {
     res.redirect(301, handler(req.params));
   });
 }
