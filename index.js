@@ -5,10 +5,9 @@ const PORT = 3000;
 // Static route mappings
 const staticRoutes = {
   home: "https://oolka.page.link/home",
-  insights: "https://oolka.page.link/creditreport",
+  Insights: "https://oolka.page.link/Insights",
   creditreport: "https://oolka.page.link/creditreport",
-  bankstatement: "https://oolka.page.link/bankstatement",
-  rewards: "https://oolka.page.link/rewards",
+  rewards: "https://oolka.page.link/Reward",
   securedcard: "https://oolka.page.link/securedcard",
   BankList: "https://oolka.page.link/BankList",
   "get-a-loan": "https://oolka.page.link/get-a-loan",
